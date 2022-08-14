@@ -1,0 +1,177 @@
+
+/*
+Rajeev Kulkarni, Madhur  - 1001857050
+Shetty,Rohan Prakash - 1001969248
+Vishwanath Shetty, Navyashree - 1001968039
+*/
+
+.login-parent-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    /* margin: 0% 6%;  */
+    height: inherit !important;
+    /* border: 1px solid black !important */
+}
+
+/* Default HTML elements styles */
+
+a {
+    text-decoration: none;
+}
+
+/* Default HTML elements styles ends */
+/* Login Card */
+
+.login-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-parent .errorelement {
+    border: 1px solid;
+    border-color: rgb(26, 2, 2) !important;
+}
+.login-parent a {
+    color: #6152ec e8;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+}
+.login-parent h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 40px 8px 10px 8px;
+    color: #ccc;
+}
+.login-parent #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-parent h2.inactive {
+    color: #ccc;
+}
+.login-parent h2.active {
+    color: #0d0d0d;
+    /* border-bottom: 2px solid #ec5252; */
+}
+.login-parent .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    /* padding: 20px; */
+}
+.login-parent #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+#loginForm {
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    input[type="password"]:focus {
+        background-color: #fff;
+        border-bottom: 2px solid #ec5252;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="password"] {
+        background-color: #f6f6f6;
+        border: none;
+        color: #0d0d0d;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px;
+        border: 2px solid #f6f6f6;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        width: 80%;
+        -moz-appearance: textfield;
+    }
+
+    input[type="text"]:placeholder,
+    input[type="number"]:placeholder,
+    input[type="password"]:placeholder {
+        color: #cccccc;
+    }
+
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #ec5252;
+    }
+
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #ec5252bf;
+        border: none;
+        color: white;
+        padding: 15px 80px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 13px;
+        -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+        box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        margin: 20px 20px 20px 20px;
+        width: 80%;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+/* Login Card Ends*/
+
+/* Styles to keep header at the bottom of the page */
+#footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
+#login-parent-container {
+    display: flex;
+    flex: 1;
+}
+
+.h-100 {
+    height: 100%;
+}

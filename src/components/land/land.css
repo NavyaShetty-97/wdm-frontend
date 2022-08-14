@@ -1,0 +1,27 @@
+
+/*
+Rajeev Kulkarni, Madhur  - 1001857050
+Shetty,Rohan Prakash - 1001969248
+Vishwanath Shetty, Navyashree - 1001968029
+*/
+
+.display_div {
+    min-height: 75vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.chart_boards {
+    border: 1px solid black;
+    border-radius: 10px;
+    max-height: 60vh;
+    min-width: 45vh;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.chart_boards2 {
+    max-height: 60vh;
+    min-width: 45vh;
+    text-align: center;
+}

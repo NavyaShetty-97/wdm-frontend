@@ -1,0 +1,42 @@
+
+/*
+Rajeev Kulkarni, Madhur  - 1001857050
+Shetty,Rohan Prakash - 1001969248
+Vishwanath Shetty, Navyashree - 1001968039
+*/
+
+@font-face {
+	font-family: "montserrat";
+	/* src: url("../Montserrat/Montserrat-Light.ttf"); */
+	src: url("./assets/fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+html * {
+	/* font-size: 1em !important; */
+	font-family: montserrat !important;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	font-family: montserrat, sans-serif;
+	font-size: 1em;
+	color: #292929;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.App {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}

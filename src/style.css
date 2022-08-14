@@ -1,0 +1,413 @@
+
+/*
+Rajeev Kulkarni, Madhur  - 1001857050
+Shetty,Rohan Prakash - 1001969248
+Vishwanath Shetty, Navyashree - 1001968039
+*/
+
+ul {
+    list-style: none;
+}
+
+a,
+input,
+button {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+a,
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+
+button {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*grid styles*/
+.flex {
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.row {
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    box-orient: horizontal;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.justify-content-center,
+.flex.justify-content-center {
+    justify-content: center;
+}
+
+.row.align-items-center,
+.flex.align-items-center {
+    align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+    .col-xs-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-5 {
+        max-width: 41.667%;
+        -ms-flex: 0 0 41.667%;
+        flex: 0 0 41.667%;
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+/*dimensions*/
+.py-100 {
+    padding: 100px 0;
+}
+
+.py-50 {
+    padding: 50px 0;
+}
+
+.py-50 {
+    padding: 20px 0;
+}
+
+/* button fluid */
+
+.btn {
+    background: none;
+    color: rgb(0, 0, 0);
+    border: 3px solid black;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: #57468a;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    border-radius: 50% 50% 0 0;
+    height: 0%;
+    transition: all 0.5s;
+}
+
+.btn:hover:before {
+    height: 210%;
+}
+
+/*Responsiveness*/
+@media (min-width: 576px) {
+
+    .container,
+    .btn {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .btn {
+        max-width: 720px;
+    }
+
+    /*Navigation*/
+    .nav_menu ul li {
+        padding: 0 0.625em;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .btn {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .btn {
+        max-width: 1380px;
+    }
+}
+
+@media (max-width: 768px) {
+    header#header {
+        padding: 1em 0;
+    }
+
+    /*Mobile Navigation*/
+    .nav_menu ul {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        right: 0;
+        transition: all 0.6s ease-in-out;
+        background-color: white;
+        opacity: 0;
+    }
+
+    .nav_menu ul li {
+        position: relative;
+        text-align: center;
+        padding: 1rem;
+        display: block;
+    }
+
+    .nav_menu ul li:not(:first-child)::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        content: "";
+        height: 2px;
+        background-color: #333;
+    }
+
+    .nav_menu ul li a {
+        color: #292929;
+    }
+
+    .nav_menu ul li:hover a {
+        color: #eac99f;
+    }
+
+    .nav_menu ul li a[class="active"] {
+        color: #292929;
+    }
+
+    #mobile-toggle-btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pricing_slider {
+        width: 250px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .slider_nav {
+        display: block;
+    }
+
+    .slide {
+        transform: translateX(calc(100% + 2em));
+    }
+}
+
+/* Contact Us Page */
+
+.layout {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/********Grid Widht *******/
+
+.form-group {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+}
+
+.g-8 {
+    width: 66.6667%;
+}
+
+.g-12 {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/***Section Css******/
+section-contact {
+    background: #ffffff;
+    color: #000;
+    padding: 30px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact p {
+    color: #929292;
+    letter-spacing: 1.5px;
+    padding-top: 50px;
+}
+
+.form {
+    margin: 0 auto;
+}
+
+.form form {
+    margin-top: 50px;
+}
+
+input {
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.costom-btn {
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    color: #ffffff;
+    font: bold 16px/18px montserrat;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-top: 23px;
+}
+
+.icon-text {
+    color: #000000;
+    font: 16px/22px montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.icon-holder {
+    margin: 0 auto;
+    width: 265px;
+}
+
+.icon-holder ul li a {
+    color: #000000;
+    height: 38px;
+    width: 38px;
+}
+
+.icon-holder ul li {
+    display: inline;
+    padding: 12px;
+}
+
+@media (max-width:980px) {
+    .layout {
+        width: 80%px;
+    }
+
+    .g-6 {
+        width: 50%;
+    }
+}
+
+@media (max-width:640px) {
+    .layout {
+        width: 80%;
+    }
+
+    .form-group,
+    .g-8 {
+        width: 100%;
+    }
+}

@@ -1,0 +1,133 @@
+
+/*
+Rajeev Kulkarni, Madhur  - 1001857050
+Shetty,Rohan Prakash - 1001969248
+Vishwanath Shetty, Navyashree - 1001968039
+*/
+
+#footer {
+    font-family: montserrat, sans-serif;
+    background-color: #F2F2F2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
+}
+
+#footer h2 {
+    line-height: 1.2;
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0 0.275em;
+    color: rgb(0, 0, 0);
+}
+
+#footer .row>div {
+    max-width: 300px;
+    margin-top: 2em;
+}
+
+#footer ul li {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin: 0.5em;
+}
+
+#footer img {
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 1em;
+}
+
+/*Responsiveness*/
+@media (min-width: 576px) {
+
+    .container,
+    .btn {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container,
+    .btn {
+        max-width: 720px;
+    }
+
+    /*Navigation*/
+    .nav_menu ul li {
+        padding: 0 0.625em;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container,
+    .btn {
+        max-width: 960px;
+    }
+
+    #footer .row div:first-child {
+        margin-right: 3em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .btn {
+        max-width: 1380px;
+    }
+}
+
+@media (max-width: 768px) {
+    header#header {
+        padding: 1em 0;
+    }
+
+    /*Mobile Navigation*/
+    .nav_menu ul {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        right: 0;
+        transition: all 0.6s ease-in-out;
+        background-color: white;
+        opacity: 0;
+    }
+
+    .nav_menu ul li {
+        position: relative;
+        text-align: center;
+        padding: 1rem;
+        display: block;
+    }
+
+    .nav_menu ul li:not(:first-child)::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        content: "";
+        height: 2px;
+        background-color: #333;
+    }
+
+    .nav_menu ul li a {
+        color: #292929;
+    }
+
+    .nav_menu ul li:hover a {
+        color: #eac99f;
+    }
+
+    .nav_menu ul li a[class="active"] {
+        color: #292929;
+    }
+
+    #mobile-toggle-btn {
+        display: block;
+    }
+}

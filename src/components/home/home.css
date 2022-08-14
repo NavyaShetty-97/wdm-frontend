@@ -1,0 +1,48 @@
+
+/*
+Rajeev Kulkarni, Madhur  - 1001857050
+Shetty,Rohan Prakash - 1001969248
+Vishwanath Shetty, Navyashree - 1001968039
+*/
+
+#home_disp {
+    width: 115%;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 750px;
+    padding: 2.375em 0;
+    min-height: 75vh;
+    background-color: rgb(255, 255, 255);
+    background-image: url('../../assets/images/test.png');
+}
+
+#home_disp>.container {
+    align-self: center;
+}
+
+#home_disp>.container>div {
+    max-width: 400px;
+    padding-top: 5%;
+}
+
+#home_disp>.container>div>h1 {
+    font-family: montserrat, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 5600;
+    letter-spacing: 1.5px;
+    padding-bottom: 4%;
+}
+
+#home_disp>.container>div>.to-login>a {
+    font-family: montserrat, sans-serif;
+    font-size: 1em;
+    background-color: #000000;
+    margin-right: 5px;
+    color: #faf7f7;
+    padding: 1em 2em;
+}
+
+.to-login {
+    margin-top: 2em;
+    ;
+}

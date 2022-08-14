@@ -1,0 +1,172 @@
+
+/*
+Rajeev Kulkarni, Madhur  - 1001857050
+Shetty,Rohan Prakash - 1001969248
+Vishwanath Shetty, Navyashree - 1001968039
+*/
+
+#login-admin {
+    width: 115%;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 750px;
+    padding: 2.375em 0;
+    min-height: 85vh;
+    background-color: rgb(255, 255, 255);
+    /* display: flex; */
+}
+
+.admin-name{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background: url('../../assets/images/add_pp.png');
+}
+
+.profile {
+    margin-left: 5%;
+    display: flex;
+    gap: 3%;
+    height: 200px;
+}
+
+/* .profile_details {
+    font-family: montserrat, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 5600; */
+    /* letter-spacing: 1.5px; */
+    /* padding-bottom: 4%;
+} */
+
+.pp_pic {
+    height: 200px;
+    width: 200px;
+}
+
+.upload_pp {
+    width: 200px;
+}
+
+.dashboard_table_tabs {
+    display: flex;
+    /* gap: 5%; */
+}
+
+.dashboard_table_buttons {
+    /* background-color: rgb(0, 0, 0); */
+    color: rgb(0, 0, 0);
+    /* border-radius: 15%; */
+    width: 80px;
+    background: url('../../assets/images/button2.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    /* padding-left: 10% */
+    margin: auto;
+    text-align: center;
+}
+
+.dashboard_table_buttons p {
+    text-align: center;
+    margin: auto;
+    padding: 2px 0px;
+}
+/* .table-content{
+    overflow-x: auto;
+} */
+
+.dashboard_table_columns {
+    
+    /* margin-left: 17.55%; */
+    /* gap: 26%; */
+    display: flex;
+    border: 1px solid rgb(43, 128, 231);
+    /* border-bottom: none; */
+    width: 1000px;
+    /* padding-left: 19.55%; */
+}
+
+.user_verify_contents {
+    overflow: auto;
+}
+
+.user_msg_contents{
+    overflow: auto;
+}
+
+
+table {
+    /* border: 2px solid rgb(43, 128, 231); */
+    width: 1000px;
+    /* height: 500px; */
+    border-collapse: collapse;
+    overflow: scroll;
+}
+
+/* th {
+    border: 1px solid black;
+    position: fixed;
+    padding-top: 0%;
+} */
+
+td {
+    text-align: center;
+    border: 1px solid #dddddd;
+    /* border: 1px solid rgb(131, 151, 176); */
+    width: 100px;
+    max-height: 40px;
+    padding: 5px 0px !important;
+
+}
+
+tr:nth-child(even) {
+    background-color:#c5bde1;
+    /* background-color: rgb(229, 231, 233); */
+    /* box-shadow: 3px 1.5px; */
+}
+
+.to_verify {
+    margin: 2em;
+    display: flex;
+    gap: 2%;
+}
+
+.profile-pic{
+    width: "200px";
+    height: "200px";
+}
+
+@media(max-width:576px){
+    .profile{
+        display: block;
+    }
+    .profile-pic{
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .dashboard_table_columns{
+        overflow-x: scroll;
+        display: block;
+        max-width: 365px;
+    }
+    #login-admin{
+        min-height: 125vh;
+    }
+}
+
+@media(max-width:820px){
+    .profile{
+        display: block;
+    }
+    .profile-pic{
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .dashboard_table_columns{
+        overflow-x: scroll;
+        display: block;
+        max-width: 700px;
+    }
+    #login-admin{
+        min-height: 90vh;
+    }
+}
